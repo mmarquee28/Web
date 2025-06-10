@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <p></p><a href="index-1.html">О нас</a></p>
+    <img src="img/summer.jpeg" alt="пляжик" width="350" height="200">
+    <p><a href="files/archive.zip" download>Скачать архив</a></p>
+    <svg xmlns="http://www.w3.org/2000/svg" height="400" width="450">
+        <path d="M100 350 250 50m0 0 150 300" stroke="red" stroke-width="3" fill="none" />
+        <path d="M175 200h150" stroke="green" stroke-width="3" fill="none" />
+        <path d="M100 350q150-300 300 0" stroke="#00f" stroke-width="5" fill="none" />
+        <!-- Mark relevant points -->
+        <g stroke="#000" stroke-width="3">
+            <circle cx="100" cy="350" r="3" />
+            <circle cx="250" cy="50" r="3" />
+            <circle cx="400" cy="350" r="3" />
+        </g>
+        <!-- Label the points -->
+        <g font-size="30" font-family="sans-serif" text-anchor="middle">
+            <text x="100" y="350" dx="-30">A</text>
+            <text x="250" y="50" dy="-10">B</text>
+            <text x="400" y="350" dx="30">C</text>
+        </g>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" height="500" width="600" viewBox="0 0 600 500">
+        <defs>
+            <radialGradient id="ringGrad" cx="30%" cy="30%" r="70%">
+                <stop offset="0%" stop-color="#FF5722"/>
+                <stop offset="50%" stop-color="#FF5722" stop-opacity="0"/>
+                <stop offset="50%" stop-color="#3F51B5" stop-opacity="0"/>
+                <stop offset="100%" stop-color="#3F51B5"/>
+            </radialGradient>
+        </defs>
+        <circle cx="120" cy="120" r="80" fill="url(#ringGrad)" 
+                stroke="#E91E63" stroke-width="6" stroke-opacity="0.7"
+                stroke-dasharray="15 5 5 5"/>
+
+        <defs>
+            <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4CAF50"/>
+                <stop offset="25%" stop-color="#8BC34A" stop-opacity="0.8"/>
+                <stop offset="75%" stop-color="#CDDC39" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#FFEB3B"/>
+            </linearGradient>
+        </defs>
+        <rect x="280" y="40" width="150" height="100" rx="15"
+            fill="url(#waveGrad)" stroke="#009688" stroke-width="4"
+            stroke-linejoin="round" opacity="0.85"/>
+
+        <polygon points="500,100 525,170 595,170 540,210 565,280 500,240 435,280 460,210 405,170 475,170"
+                fill="#9C27B0" fill-opacity="0.7" stroke="#673AB7" stroke-width="5"/>
+        <polygon points="500,120 515,165 550,165 525,195 540,240 500,220 460,240 475,195 450,165 485,165"
+                fill="#E91E63" fill-opacity="0.5" stroke="none"/>
+        <defs>
+            <filter id="text3D" x="-2" y="-2" width="200" height="200">
+                <feDropShadow dx="2" dy="2" stdDeviation="1" flood-color="#795548"/>
+                <feDropShadow dx="-2" dy="-2" stdDeviation="1" flood-color="#FFC107"/>
+            </filter>
+        </defs>
+        <text x="300" y="380" font-family="Arial" font-size="32" font-weight="bold"
+            fill="#2196F3" filter="url(#text3D)" opacity="0.9">
+            Рисовашка
+        </text>
+
+        <path d="M50 350 C100 250 200 450 300 350 S450 250 550 320"
+            fill="none" stroke="#FF9800" stroke-width="10"
+            stroke-linecap="round">
+            <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+        </path>
+
+        <g transform="translate(400, 350) rotate(15)">
+            <rect x="0" y="0" width="100" height="100" fill="#00BCD4" opacity="0.6"/>
+            <circle cx="50" cy="50" r="40" fill="#FF5252" opacity="0.6"/>
+            <polygon points="50,10 80,80 20,80" fill="#FFD740" opacity="0.8"/>
+            <line x1="0" y1="0" x2="100" y2="100" stroke="#212121" stroke-width="3"/>
+            <line x1="100" y1="0" x2="0" y2="100" stroke="#212121" stroke-width="3"/>
+        </g>
+    </svg>
+
+    <video width="720" height="540" controls>
+        <source src="media/video5348382843674327529.mp4" type="video/mp4">
+    </video>
+    <audio controls loop>
+        <source src="media/f1d2dcb5-7ddf-46bf-84f6-234012fa91d3-1691126072743.mp3" type="audio/mpeg" />
+    </audio>
+
+</body>
+</html>
